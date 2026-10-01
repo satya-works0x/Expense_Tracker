@@ -39,6 +39,7 @@ class Program
         int newExpense =Convert.ToInt32(Console.ReadLine());
         // declared for total calculation
         int total = 0;
+        int highestExpense = 0;
         
         for(int i=1; i<=newExpense; i++)
         {
@@ -53,6 +54,16 @@ class Program
             //adding expenses to the list
             expenses.Add( new Expense(newName, newAmount));
         }
+
+        for(int expenseIndex = 0; expenseIndex < expenses.Count; expenseIndex++)
+        {
+            int currentIndex = expenses[expenseIndex].Amount;
+
+            if(currentIndex>highestExpense)
+            { highestExpense= currentIndex;}
+            
+        }
+        Console.WriteLine("your highest expense is : " + highestExpense);
 
         
 
