@@ -1,0 +1,26 @@
+name: Generate README
+
+on:
+  push:
+    branches:
+      - main # Runs every time you push to the main branch
+  workflow_dispatch: # Allows you to run it manually from the Actions tab
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetches all history for better code context
+
+      - name: Run README Generator
+        uses: bitflight-devops/github-action-readme-generator@v1
+        # (Alternatively, you can use any AI-specific README action here)
+        
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs: auto-generated README.md"
+          file_pattern: README.md
