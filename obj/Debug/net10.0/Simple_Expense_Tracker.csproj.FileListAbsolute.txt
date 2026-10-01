@@ -1,0 +1,14 @@
+D:\Code\c#\Patterns\Projects\Simple_Expense_Tracker\bin\Debug\net10.0\Simple_Expense_Tracker.exe
+D:\Code\c#\Patterns\Projects\Simple_Expense_Tracker\bin\Debug\net10.0\Simple_Expense_Tracker.deps.json
+D:\Code\c#\Patterns\Projects\Simple_Expense_Tracker\bin\Debug\net10.0\Simple_Expense_Tracker.runtimeconfig.json
+D:\Code\c#\Patterns\Projects\Simple_Expense_Tracker\bin\Debug\net10.0\Simple_Expense_Tracker.dll
+D:\Code\c#\Patterns\Projects\Simple_Expense_Tracker\bin\Debug\net10.0\Simple_Expense_Tracker.pdb
+D:\Code\c#\Patterns\Projects\Simple_Expense_Tracker\obj\Debug\net10.0\Simple_Expense_Tracker.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\c#\Patterns\Projects\Simple_Expense_Tracker\obj\Debug\net10.0\Simple_Expense_Tracker.AssemblyInfoInputs.cache
+D:\Code\c#\Patterns\Projects\Simple_Expense_Tracker\obj\Debug\net10.0\Simple_Expense_Tracker.AssemblyInfo.cs
+D:\Code\c#\Patterns\Projects\Simple_Expense_Tracker\obj\Debug\net10.0\Simple_Expense_Tracker.csproj.CoreCompileInputs.cache
+D:\Code\c#\Patterns\Projects\Simple_Expense_Tracker\obj\Debug\net10.0\Simple_Expense_Tracker.dll
+D:\Code\c#\Patterns\Projects\Simple_Expense_Tracker\obj\Debug\net10.0\refint\Simple_Expense_Tracker.dll
+D:\Code\c#\Patterns\Projects\Simple_Expense_Tracker\obj\Debug\net10.0\Simple_Expense_Tracker.pdb
+D:\Code\c#\Patterns\Projects\Simple_Expense_Tracker\obj\Debug\net10.0\Simple_Expense_Tracker.genruntimeconfig.cache
+D:\Code\c#\Patterns\Projects\Simple_Expense_Tracker\obj\Debug\net10.0\ref\Simple_Expense_Tracker.dll
