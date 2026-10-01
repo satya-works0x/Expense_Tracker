@@ -35,22 +35,35 @@ class Program
 
         Console.WriteLine("How many expenses do you want to enter?");
 
+        // reading expenses count
         int newExpense =Convert.ToInt32(Console.ReadLine());
+        // declared for total calculation
+        int total = 0;
         
         for(int i=1; i<=newExpense; i++)
         {
+            // reading expense name
             Console.WriteLine("Please enter the Product name : ");
             string newName = Console.ReadLine();
+
+            //ready expense amount
             Console.WriteLine("Please enter the product value :");
             int newAmount = Convert.ToInt32(Console.ReadLine());
 
+            //adding expenses to the list
             expenses.Add( new Expense(newName, newAmount));
         }
 
+        
+
+        // printing expenses list with amount
         foreach(Expense newExpenses in expenses)
         {
             Console.WriteLine($"Product : {newExpenses.Name},amount :{ newExpenses.Amount}");
+            total+=newExpenses.Amount;
         }
+        Console.WriteLine("Total Expense is : " + total);
+
 
 
         
