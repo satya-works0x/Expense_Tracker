@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 
 public enum expenseCatagory
     {
@@ -43,8 +44,21 @@ class Program
             Console.WriteLine("Please enter the amount of this product:");
             int amount = Convert.ToInt32(Console.ReadLine());
 
-            expenses.Add(new Expense(product, amount));
-            total += amount;
+            Console.WriteLine("Please enter the expense catagory");
+            string catagory = Console.ReadLine();
+
+            if(Enum.TryParse(catagory, true, out expenseCatagory catagory1))
+            {
+                expenses.Add(new Expense(product, amount, expenseCatagory.Food));
+                total += amount;
+            }
+            else
+            {
+                Console.WriteLine("Invalid category entered! Defaulting to Food.");
+                expenses.Add(new Expense(product, amount, expenseCatagory.Food));
+                total += amount;
+            }
+            
         }
         
         for(int j=0; j<expenses.Count; j++)
@@ -57,7 +71,7 @@ class Program
 
         foreach(Expense expense in expenses)
         {
-            Console.WriteLine($"Product: {expense.Name} Amount is : {expense.Amount}");
+            Console.WriteLine($"Product: {expense.Name} Amount is : {expense.Amount} & catagory is : {expense.Catagory}");
             
         }
         
