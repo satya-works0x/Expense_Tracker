@@ -1,15 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
 
-class Expense
+public enum expenseCatagory
+    {
+        Food,
+        Transport,
+        Utils,
+        Advertisement
+    }
+public class Expense
 {
     public string Name{ get; set;}
     public int Amount{ get; set;}
-    public Expense(string Ename, int Eamout)
+    public expenseCatagory Catagory{get; set;}
+
+    public Expense(string Ename, int Eamout, expenseCatagory catagory)
     {
         this.Name = Ename;
         this.Amount = Eamout;
+        this.Catagory = catagory;
     } 
+    
 }
 
 class Program
